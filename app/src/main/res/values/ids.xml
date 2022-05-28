@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="registerBtn" type="id">register</item>
+    <item name="GotoLogin" type="id">goto</item>
+    <item name="SubmitBtn" type="id">submit</item>
+</resources>

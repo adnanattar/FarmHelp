@@ -1,0 +1,399 @@
+Index: app/src/main/res/layout/activity_care.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<LinearLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\r\n    xmlns:tools=\"http://schemas.android.com/tools\"\r\n    android:layout_width=\"match_parent\"\r\n    android:layout_height=\"match_parent\"\r\n    tools:context=\".MainActivity\"\r\n    android:orientation=\"vertical\">\r\n\r\n    <TextView\r\n        android:layout_width=\"match_parent\"\r\n        android:layout_height=\"wrap_content\"\r\n        android:text=\"Care\"\r\n        android:gravity=\"center\"\r\n        android:textStyle=\"bold\"\r\n        android:textSize=\"56dp\"/>\r\n\r\n    <ImageView\r\n        android:layout_width=\"match_parent\"\r\n        android:layout_height=\"264dp\"\r\n        android:src=\"@drawable/care\"/>\r\n    <LinearLayout\r\n        android:layout_width=\"match_parent\"\r\n        android:layout_height=\"wrap_content\">\r\n\r\n        <ImageView\r\n            android:layout_width=\"80dp\"\r\n            android:layout_height=\"wrap_content\"\r\n            android:src=\"@drawable/onion\" />\r\n\r\n        <ImageView\r\n            android:layout_width=\"80dp\"\r\n            android:layout_height=\"wrap_content\"\r\n            android:src=\"@drawable/potato\" />\r\n\r\n        <ImageView\r\n            android:layout_width=\"100dp\"\r\n            android:layout_height=\"wrap_content\"\r\n            android:src=\"@drawable/corn\" />\r\n\r\n        <ImageView\r\n            android:layout_width=\"100dp\"\r\n            android:layout_height=\"match_parent\"\r\n           >\r\n\r\n        </ImageView>\r\n\r\n    </LinearLayout>\r\n\r\n\r\n</LinearLayout>\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/activity_care.xml b/app/src/main/res/layout/activity_care.xml
+--- a/app/src/main/res/layout/activity_care.xml	(revision 108cffe36df610e383f3b58247fe649a4b1981e6)
++++ b/app/src/main/res/layout/activity_care.xml	(date 1653661144103)
+@@ -7,6 +7,9 @@
+     tools:context=".MainActivity"
+     android:orientation="vertical">
+ 
++
++
++
+     <TextView
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+@@ -15,39 +18,149 @@
+         android:textStyle="bold"
+         android:textSize="56dp"/>
+ 
++
+     <ImageView
+         android:layout_width="match_parent"
+         android:layout_height="264dp"
+         android:src="@drawable/care"/>
++
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
++        <!--onion-->
++        <androidx.cardview.widget.CardView
++            android:id="@+id/stock"
++            android:layout_width="60dp"
++            android:layout_height="60dp"
++            android:layout_row="0"
++            android:layout_rowWeight="1"
++            android:layout_column="1"
++            android:layout_columnWeight="1"
++            android:layout_gravity="fill"
++            android:layout_margin="20dp"
++            android:layout_marginTop="5dp"
++            android:layout_marginBottom="10dp"
++            app:cardCornerRadius="10dp"
++            app:cardElevation="10dp"
++
++            tools:ignore="DuplicateIds">
++
++            <LinearLayout
++                android:layout_width="match_parent"
++                android:layout_height="wrap_content">
+ 
+-        <ImageView
+-            android:layout_width="80dp"
+-            android:layout_height="wrap_content"
+-            android:src="@drawable/onion" />
++                <ImageView
++                    android:layout_width="60dp"
++                    android:layout_height="wrap_content"
++                    android:src="@drawable/onion"
++                    android:layout_weight="1"
++                    android:id="@+id/button1"
++                    />
++            </LinearLayout>
++        </androidx.cardview.widget.CardView>
++
++        <!--potato-->
++
++        <androidx.cardview.widget.CardView
++            android:id="@+id/stock"
++            android:layout_width="60dp"
++            android:layout_height="60dp"
++            android:layout_row="0"
++            android:layout_rowWeight="1"
++            android:layout_column="1"
++            android:layout_columnWeight="1"
++            android:layout_gravity="fill"
++            android:layout_margin="20dp"
++            android:layout_marginTop="5dp"
++            android:layout_marginBottom="10dp"
++            app:cardCornerRadius="10dp"
++            app:cardElevation="10dp"
++
++            tools:ignore="DuplicateIds">
++
++            <LinearLayout
++                android:layout_width="match_parent"
++                android:layout_height="wrap_content">
+ 
+-        <ImageView
+-            android:layout_width="80dp"
+-            android:layout_height="wrap_content"
+-            android:src="@drawable/potato" />
++                <ImageView
++                    android:layout_width="60dp"
++                    android:layout_height="wrap_content"
++                    android:src="@drawable/potato" />
+ 
+-        <ImageView
+-            android:layout_width="100dp"
+-            android:layout_height="wrap_content"
+-            android:src="@drawable/corn" />
++            </LinearLayout>
++        </androidx.cardview.widget.CardView>
++
++
++        <!--corn-->
++
++
++        <androidx.cardview.widget.CardView
++            android:id="@+id/stock"
++            android:layout_width="60dp"
++            android:layout_height="60dp"
++            android:layout_row="0"
++            android:layout_rowWeight="1"
++            android:layout_column="1"
++            android:layout_columnWeight="1"
++            android:layout_gravity="fill"
++            android:layout_margin="20dp"
++            android:layout_marginTop="5dp"
++            android:layout_marginBottom="10dp"
++            app:cardCornerRadius="10dp"
++            app:cardElevation="10dp"
++
++            tools:ignore="DuplicateIds">
++
++            <LinearLayout
++                android:layout_width="match_parent"
++                android:layout_height="wrap_content">
++
++
++                <ImageView
++                    android:layout_width="60dp"
++                    android:layout_height="60dp"
++                    android:src="@drawable/corn" />
+ 
+-        <ImageView
+-            android:layout_width="100dp"
+-            android:layout_height="match_parent"
+-           >
++            </LinearLayout>
++        </androidx.cardview.widget.CardView>
++
++
++        <!--tomato-->
++
++        <androidx.cardview.widget.CardView
++            android:id="@+id/stock"
++            android:layout_width="60dp"
++            android:layout_height="60dp"
++            android:layout_row="0"
++            android:layout_rowWeight="1"
++            android:layout_column="1"
++            android:layout_columnWeight="1"
++            android:layout_gravity="fill"
++            android:layout_margin="20dp"
++            android:layout_marginTop="5dp"
++            android:layout_marginBottom="10dp"
++            app:cardCornerRadius="10dp"
++            app:cardElevation="10dp"
++            tools:ignore="DuplicateIds">
++
++            <LinearLayout
++                android:layout_width="match_parent"
++                android:layout_height="wrap_content">
++
++
++                <ImageView
++                    android:layout_width="60dp"
++                    android:layout_height="match_parent"
++                    android:src="@drawable/tomato" />
+ 
+-        </ImageView>
+-
++            </LinearLayout>
++        </androidx.cardview.widget.CardView>
+     </LinearLayout>
+ 
+ 
++
++
++
+ </LinearLayout>
+ 
+ 
+@@ -66,3 +179,6 @@
+ 
+ 
+ 
++
++
++
+Index: app/src/main/res/values/strings.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><resources>\r\n    <string name=\"app_name\">FarmHelp</string>\r\n</resources>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/values/strings.xml b/app/src/main/res/values/strings.xml
+--- a/app/src/main/res/values/strings.xml	(revision 108cffe36df610e383f3b58247fe649a4b1981e6)
++++ b/app/src/main/res/values/strings.xml	(date 1653659667087)
+@@ -1,3 +1,5 @@
+ <resources>
+     <string name="app_name">FarmHelp</string>
++    <!-- TODO: Remove or change this placeholder text -->
++    <string name="hello_blank_fragment">Hello blank fragment</string>
+ </resources>
+\ No newline at end of file
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"DesignSurface\">\r\n    <option name=\"filePathToZoomLevelMap\">\r\n      <map>\r\n        <entry key=\"..\\:/Android Projects/FarmHelp/app/src/main/res/drawable-ldpi/background_border.xml\" value=\"0.1605\" />\r\n        <entry key=\"..\\:/Android Projects/FarmHelp/app/src/main/res/drawable-ldpi/btn_rounded_disabled.xml\" value=\"0.1\" />\r\n        <entry key=\"..\\:/Android Projects/FarmHelp/app/src/main/res/drawable/custom_button.xml\" value=\"0.1605\" />\r\n        <entry key=\"..\\:/Android Projects/FarmHelp/app/src/main/res/drawable/rounded_corner.xml\" value=\"0.2155\" />\r\n        <entry key=\"..\\:/Android Projects/FarmHelp/app/src/main/res/layout/activity_home_page.xml\" value=\"0.176\" />\r\n        <entry key=\"..\\:/Android Projects/FarmHelp/app/src/main/res/layout/activity_login.xml\" value=\"0.25\" />\r\n        <entry key=\"..\\:/Android Projects/FarmHelp/app/src/main/res/layout/activity_main.xml\" value=\"0.2\" />\r\n        <entry key=\"..\\:/Android Projects/FarmHelp/app/src/main/res/layout/activity_register.xml\" value=\"0.25\" />\r\n        <entry key=\"..\\:/Users/Durvesh Bodkar/AndroidStudioProjects/FarmHelpMiniProject/app/src/main/res/drawable-ldpi/background_border.xml\" value=\"0.131\" />\r\n        <entry key=\"..\\:/Users/Durvesh Bodkar/AndroidStudioProjects/FarmHelpMiniProject/app/src/main/res/drawable-ldpi/btn_rounded.xml\" value=\"0.131\" />\r\n        <entry key=\"..\\:/Users/Durvesh Bodkar/AndroidStudioProjects/FarmHelpMiniProject/app/src/main/res/drawable-ldpi/btn_rounded_disabled.xml\" value=\"0.131\" />\r\n        <entry key=\"..\\:/Users/Durvesh Bodkar/AndroidStudioProjects/FarmHelpMiniProject/app/src/main/res/drawable/custom_button.xml\" value=\"0.131\" />\r\n        <entry key=\"..\\:/Users/Durvesh Bodkar/AndroidStudioProjects/FarmHelpMiniProject/app/src/main/res/layout/activity_care.xml\" value=\"0.20863616930312098\" />\r\n        <entry key=\"..\\:/Users/Durvesh Bodkar/AndroidStudioProjects/FarmHelpMiniProject/app/src/main/res/layout/activity_contact_us.xml\" value=\"0.20863616930312098\" />\r\n        <entry key=\"..\\:/Users/Durvesh Bodkar/AndroidStudioProjects/FarmHelpMiniProject/app/src/main/res/layout/activity_harvest.xml\" value=\"0.20863616930312098\" />\r\n        <entry key=\"..\\:/Users/Durvesh Bodkar/AndroidStudioProjects/FarmHelpMiniProject/app/src/main/res/layout/activity_home_page.xml\" value=\"0.20863616930312098\" />\r\n        <entry key=\"..\\:/Users/Durvesh Bodkar/AndroidStudioProjects/FarmHelpMiniProject/app/src/main/res/layout/activity_login.xml\" value=\"0.20863616930312098\" />\r\n        <entry key=\"..\\:/Users/Durvesh Bodkar/AndroidStudioProjects/FarmHelpMiniProject/app/src/main/res/layout/activity_main.xml\" value=\"0.20863616930312098\" />\r\n        <entry key=\"..\\:/Users/Durvesh Bodkar/AndroidStudioProjects/FarmHelpMiniProject/app/src/main/res/layout/activity_market.xml\" value=\"0.20863616930312098\" />\r\n        <entry key=\"..\\:/Users/Durvesh Bodkar/AndroidStudioProjects/FarmHelpMiniProject/app/src/main/res/layout/activity_my_farm.xml\" value=\"0.20863616930312098\" />\r\n        <entry key=\"..\\:/Users/Durvesh Bodkar/AndroidStudioProjects/FarmHelpMiniProject/app/src/main/res/layout/activity_pestisides.xml\" value=\"0.20863616930312098\" />\r\n        <entry key=\"..\\:/Users/Durvesh Bodkar/AndroidStudioProjects/FarmHelpMiniProject/app/src/main/res/layout/activity_register.xml\" value=\"0.20863616930312098\" />\r\n        <entry key=\"..\\:/Users/Durvesh Bodkar/AndroidStudioProjects/FarmHelpMiniProject/app/src/main/res/layout/activity_stock.xml\" value=\"0.20863616930312098\" />\r\n        <entry key=\"..\\:/Users/Durvesh Bodkar/AndroidStudioProjects/FarmHelpMiniProject/app/src/main/res/layout/activity_weather.xml\" value=\"0.20863616930312098\" />\r\n        <entry key=\"..\\:/mini-project/farmhelp/app/src/main/res/layout/activity_care.xml\" value=\"0.22083333333333333\" />\r\n        <entry key=\"..\\:/mini-project/farmhelp/app/src/main/res/layout/activity_contact_us.xml\" value=\"0.22083333333333333\" />\r\n        <entry key=\"..\\:/mini-project/farmhelp/app/src/main/res/layout/activity_market.xml\" value=\"0.22083333333333333\" />\r\n        <entry key=\"..\\:/mini-project/farmhelp/app/src/main/res/layout/activity_my_farm.xml\" value=\"0.264\" />\r\n        <entry key=\"..\\:/mini-project/farmhelp/app/src/main/res/layout/activity_pesticides.xml\" value=\"0.22083333333333333\" />\r\n        <entry key=\"..\\:/mini-project/farmhelp/app/src/main/res/layout/activity_stock.xml\" value=\"0.13451086956521738\" />\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"ProjectRootManager\" version=\"2\" languageLevel=\"JDK_11\" default=\"true\" project-jdk-name=\"Android Studio default JDK\" project-jdk-type=\"JavaSDK\">\r\n    <output url=\"file://$PROJECT_DIR$/build/classes\" />\r\n  </component>\r\n  <component name=\"ProjectType\">\r\n    <option name=\"id\" value=\"Android\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+--- a/.idea/misc.xml	(revision 108cffe36df610e383f3b58247fe649a4b1981e6)
++++ b/.idea/misc.xml	(date 1653661945966)
+@@ -27,12 +27,17 @@
+         <entry key="..\:/Users/Durvesh Bodkar/AndroidStudioProjects/FarmHelpMiniProject/app/src/main/res/layout/activity_register.xml" value="0.20863616930312098" />
+         <entry key="..\:/Users/Durvesh Bodkar/AndroidStudioProjects/FarmHelpMiniProject/app/src/main/res/layout/activity_stock.xml" value="0.20863616930312098" />
+         <entry key="..\:/Users/Durvesh Bodkar/AndroidStudioProjects/FarmHelpMiniProject/app/src/main/res/layout/activity_weather.xml" value="0.20863616930312098" />
+-        <entry key="..\:/mini-project/farmhelp/app/src/main/res/layout/activity_care.xml" value="0.22083333333333333" />
++        <entry key="..\:/mini-project/farmhelp/app/src/main/res/layout/activity_care.xml" value="0.2" />
+         <entry key="..\:/mini-project/farmhelp/app/src/main/res/layout/activity_contact_us.xml" value="0.22083333333333333" />
++        <entry key="..\:/mini-project/farmhelp/app/src/main/res/layout/activity_home_page.xml" value="0.13451086956521738" />
++        <entry key="..\:/mini-project/farmhelp/app/src/main/res/layout/activity_login.xml" value="0.22083333333333333" />
++        <entry key="..\:/mini-project/farmhelp/app/src/main/res/layout/activity_main.xml" value="0.17708333333333334" />
+         <entry key="..\:/mini-project/farmhelp/app/src/main/res/layout/activity_market.xml" value="0.22083333333333333" />
+         <entry key="..\:/mini-project/farmhelp/app/src/main/res/layout/activity_my_farm.xml" value="0.264" />
+         <entry key="..\:/mini-project/farmhelp/app/src/main/res/layout/activity_pesticides.xml" value="0.22083333333333333" />
+-        <entry key="..\:/mini-project/farmhelp/app/src/main/res/layout/activity_stock.xml" value="0.13451086956521738" />
++        <entry key="..\:/mini-project/farmhelp/app/src/main/res/layout/activity_register.xml" value="0.22083333333333333" />
++        <entry key="..\:/mini-project/farmhelp/app/src/main/res/layout/activity_stock.xml" value="0.264" />
++        <entry key="..\:/mini-project/farmhelp/app/src/main/res/layout/fragment_onion.xml" value="0.25" />
+       </map>
+     </option>
+   </component>
+Index: app/src/main/res/layout/activity_market.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<LinearLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\r\n    xmlns:tools=\"http://schemas.android.com/tools\"\r\n    android:layout_width=\"match_parent\"\r\n    android:layout_height=\"match_parent\"\r\n    tools:context=\".MainActivity\"\r\n    android:background=\"@drawable/backpage\"\r\n    android:orientation=\"vertical\">\r\n\r\n    <LinearLayout\r\n        android:layout_width=\"match_parent\"\r\n        android:layout_height=\"wrap_content\"\r\n        android:orientation=\"vertical\">\r\n\r\n\r\n        <TextView\r\n            android:layout_width=\"match_parent\"\r\n            android:layout_height=\"wrap_content\"\r\n            android:gravity=\"center\"\r\n            android:text=\"Market\"\r\n            android:textSize=\"40dp\"\r\n            android:textStyle=\"bold\">\r\n\r\n        </TextView>\r\n        <ImageView\r\n            android:layout_width=\"428dp\"\r\n            android:layout_height=\"300dp\"\r\n            android:src=\"@drawable/Market\"></ImageView>\r\n\r\n    </LinearLayout>\r\n    <LinearLayout\r\n        android:layout_width=\"400dp\"\r\n        android:layout_height=\"80dp\"\r\n        android:layout_gravity=\"center\"\r\n        android:background=\"@drawable/marketborder\"\r\n        android:orientation=\"vertical\">\r\n\r\n        <TextView\r\n            android:layout_width=\"match_parent\"\r\n            android:layout_height=\"wrap_content\"\r\n            android:gravity=\"center\"\r\n            android:text=\"Kolhapur District\"\r\n            android:textSize=\"20dp\"\r\n            android:textStyle=\"bold\"></TextView>\r\n\r\n        <TextView\r\n            android:layout_width=\"match_parent\"\r\n            android:layout_height=\"wrap_content\"\r\n            android:layout_marginTop=\"10dp\"\r\n            android:gravity=\"center\"\r\n            android:text=\"Today's Market Rate\"\r\n            android:textSize=\"15dp\"></TextView>\r\n\r\n\r\n    </LinearLayout>\r\n\r\n    <LinearLayout\r\n        android:layout_width=\"match_parent\"\r\n        android:layout_height=\"40dp\"\r\n        android:layout_marginTop=\"15dp\"\r\n        android:background=\"@drawable/marketborder\"\r\n        android:orientation=\"horizontal\">\r\n\r\n        <ImageView\r\n            android:layout_width=\"25dp\"\r\n            android:layout_height=\"20dp\"\r\n            android:layout_marginStart=\"20dp\"\r\n            android:src=\"@drawable/Tomato\"></ImageView>\r\n\r\n        <TextView\r\n            android:layout_width=\"wrap_content\"\r\n            android:layout_height=\"wrap_content\"\r\n            android:layout_marginStart=\"25dp\"\r\n            android:gravity=\"center\"\r\n            android:text=\"Tomato\"\r\n            android:textSize=\"15dp\"\r\n            android:textStyle=\"bold\"></TextView>\r\n\r\n        <TextView\r\n            android:layout_width=\"wrap_content\"\r\n            android:layout_height=\"wrap_content\"\r\n            android:layout_marginStart=\"100dp\"\r\n            android:gravity=\"center\"\r\n            android:text=\"0 Qtls\"\r\n            android:textSize=\"15dp\"\r\n            android:textStyle=\"bold\"></TextView>\r\n\r\n    </LinearLayout>\r\n\r\n    <LinearLayout\r\n        android:layout_width=\"match_parent\"\r\n        android:layout_height=\"40dp\"\r\n        android:layout_marginTop=\"8dp\"\r\n        android:background=\"@drawable/marketborder\"\r\n        android:orientation=\"horizontal\">\r\n\r\n        <ImageView\r\n            android:layout_width=\"25dp\"\r\n            android:layout_height=\"25dp\"\r\n            android:layout_marginStart=\"20dp\"\r\n            android:src=\"@drawable/Onin\"></ImageView>\r\n\r\n        <TextView\r\n            android:layout_width=\"wrap_content\"\r\n            android:layout_height=\"wrap_content\"\r\n            android:layout_marginStart=\"25dp\"\r\n            android:gravity=\"center\"\r\n            android:text=\"Onion\"\r\n            android:textSize=\"15dp\"\r\n            android:textStyle=\"bold\"></TextView>\r\n\r\n        <TextView\r\n            android:layout_width=\"wrap_content\"\r\n            android:layout_height=\"wrap_content\"\r\n            android:layout_marginStart=\"110dp\"\r\n            android:gravity=\"center\"\r\n            android:text=\"200 Qtls\"\r\n            android:textSize=\"15dp\"\r\n            android:textStyle=\"bold\"></TextView>\r\n\r\n    </LinearLayout>\r\n\r\n    <LinearLayout\r\n        android:layout_width=\"match_parent\"\r\n        android:layout_height=\"40dp\"\r\n        android:layout_marginTop=\"8dp\"\r\n        android:background=\"@drawable/marketborder\"\r\n        android:orientation=\"horizontal\">\r\n\r\n        <ImageView\r\n            android:layout_width=\"25dp\"\r\n            android:layout_height=\"25dp\"\r\n            android:layout_marginStart=\"20dp\"\r\n            android:src=\"@drawable/potato\"></ImageView>\r\n\r\n        <TextView\r\n            android:layout_width=\"wrap_content\"\r\n            android:layout_height=\"wrap_content\"\r\n            android:layout_marginStart=\"25dp\"\r\n            android:gravity=\"center\"\r\n            android:text=\"Potato\"\r\n            android:textSize=\"15dp\"\r\n            android:textStyle=\"bold\"></TextView>\r\n\r\n        <TextView\r\n            android:layout_width=\"wrap_content\"\r\n            android:layout_height=\"wrap_content\"\r\n            android:layout_marginStart=\"105dp\"\r\n            android:gravity=\"center\"\r\n            android:text=\"158 Qtls\"\r\n            android:textSize=\"15dp\"\r\n            android:textStyle=\"bold\"></TextView>\r\n\r\n    </LinearLayout>\r\n\r\n    <LinearLayout\r\n        android:layout_width=\"match_parent\"\r\n        android:layout_height=\"40dp\"\r\n        android:layout_marginTop=\"8dp\"\r\n        android:background=\"@drawable/marketborder\"\r\n        android:orientation=\"horizontal\">\r\n\r\n        <ImageView\r\n            android:layout_width=\"25dp\"\r\n            android:layout_height=\"25dp\"\r\n            android:layout_marginStart=\"20dp\"\r\n            android:src=\"@drawable/corn\"></ImageView>\r\n\r\n        <TextView\r\n            android:layout_width=\"wrap_content\"\r\n            android:layout_height=\"wrap_content\"\r\n            android:layout_marginStart=\"25dp\"\r\n            android:gravity=\"center\"\r\n            android:text=\"Corn\"\r\n            android:textSize=\"15dp\"\r\n            android:textStyle=\"bold\"></TextView>\r\n\r\n        <TextView\r\n            android:layout_width=\"wrap_content\"\r\n            android:layout_height=\"wrap_content\"\r\n            android:layout_marginStart=\"115dp\"\r\n            android:gravity=\"center\"\r\n            android:text=\"0 Qtls\"\r\n            android:textSize=\"15dp\"\r\n            android:textStyle=\"bold\"></TextView>\r\n\r\n    </LinearLayout>\r\n\r\n    <LinearLayout\r\n        android:layout_width=\"match_parent\"\r\n        android:layout_height=\"40dp\"\r\n        android:layout_marginTop=\"8dp\"\r\n        android:background=\"@drawable/marketborder\"\r\n        android:orientation=\"horizontal\">\r\n\r\n        <ImageView\r\n            android:layout_width=\"25dp\"\r\n            android:layout_height=\"25dp\"\r\n            android:layout_marginStart=\"20dp\"\r\n            android:src=\"@drawable/all_veg\"></ImageView>\r\n\r\n        <TextView\r\n            android:layout_width=\"wrap_content\"\r\n            android:layout_height=\"wrap_content\"\r\n            android:layout_marginStart=\"25dp\"\r\n            android:gravity=\"center\"\r\n            android:text=\"Comming Soon\"\r\n            android:textSize=\"15dp\"\r\n            android:textStyle=\"bold\"></TextView>\r\n\r\n        <TextView\r\n            android:layout_width=\"wrap_content\"\r\n            android:layout_height=\"wrap_content\"\r\n            android:layout_marginStart=\"40dp\"\r\n            android:gravity=\"center\"\r\n            android:text=\"more....\"\r\n            android:textSize=\"15dp\"\r\n            android:textStyle=\"bold\"></TextView>\r\n\r\n    </LinearLayout>\r\n</LinearLayout>\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/activity_market.xml b/app/src/main/res/layout/activity_market.xml
+--- a/app/src/main/res/layout/activity_market.xml	(revision 108cffe36df610e383f3b58247fe649a4b1981e6)
++++ b/app/src/main/res/layout/activity_market.xml	(date 1653659667790)
+@@ -26,7 +26,7 @@
+         <ImageView
+             android:layout_width="428dp"
+             android:layout_height="300dp"
+-            android:src="@drawable/Market"></ImageView>
++            android:src="@drawable/market"></ImageView>
+ 
+     </LinearLayout>
+     <LinearLayout
+@@ -66,7 +66,7 @@
+             android:layout_width="25dp"
+             android:layout_height="20dp"
+             android:layout_marginStart="20dp"
+-            android:src="@drawable/Tomato"></ImageView>
++            android:src="@drawable/tomato"></ImageView>
+ 
+         <TextView
+             android:layout_width="wrap_content"
+@@ -99,7 +99,7 @@
+             android:layout_width="25dp"
+             android:layout_height="25dp"
+             android:layout_marginStart="20dp"
+-            android:src="@drawable/Onin"></ImageView>
++            android:src="@drawable/onion"></ImageView>
+ 
+         <TextView
+             android:layout_width="wrap_content"
+Index: app/src/main/res/layout/fragment_onion.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/fragment_onion.xml b/app/src/main/res/layout/fragment_onion.xml
+new file mode 100644
+--- /dev/null	(date 1653661144041)
++++ b/app/src/main/res/layout/fragment_onion.xml	(date 1653661144041)
+@@ -0,0 +1,16 @@
++<?xml version="1.0" encoding="utf-8"?>
++<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
++    xmlns:tools="http://schemas.android.com/tools"
++    android:layout_width="match_parent"
++    android:layout_height="match_parent"
++    tools:context=".onionFragment">
++
++    <!-- TODO: Update blank fragment layout -->
++    <TextView
++        android:layout_width="match_parent"
++        android:layout_height="match_parent"
++        android:background="#D6ECD3"
++        android:text="im onion"
++        android:textSize="24sp" />
++
++</FrameLayout>
+\ No newline at end of file
+Index: app/src/main/java/com/ynot/farmhelp/onionFragment.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/ynot/farmhelp/onionFragment.java b/app/src/main/java/com/ynot/farmhelp/onionFragment.java
+new file mode 100644
+--- /dev/null	(date 1653659667282)
++++ b/app/src/main/java/com/ynot/farmhelp/onionFragment.java	(date 1653659667282)
+@@ -0,0 +1,64 @@
++package com.ynot.farmhelp;
++
++import android.os.Bundle;
++
++import androidx.fragment.app.Fragment;
++
++import android.view.LayoutInflater;
++import android.view.View;
++import android.view.ViewGroup;
++
++/**
++ * A simple {@link Fragment} subclass.
++ * Use the {@link onionFragment#newInstance} factory method to
++ * create an instance of this fragment.
++ */
++public class onionFragment extends Fragment {
++
++    // TODO: Rename parameter arguments, choose names that match
++    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
++    private static final String ARG_PARAM1 = "param1";
++    private static final String ARG_PARAM2 = "param2";
++
++    // TODO: Rename and change types of parameters
++    private String mParam1;
++    private String mParam2;
++
++    public onionFragment() {
++        // Required empty public constructor
++    }
++
++    /**
++     * Use this factory method to create a new instance of
++     * this fragment using the provided parameters.
++     *
++     * @param param1 Parameter 1.
++     * @param param2 Parameter 2.
++     * @return A new instance of fragment onionFragment.
++     */
++    // TODO: Rename and change types and number of parameters
++    public static onionFragment newInstance(String param1, String param2) {
++        onionFragment fragment = new onionFragment();
++        Bundle args = new Bundle();
++        args.putString(ARG_PARAM1, param1);
++        args.putString(ARG_PARAM2, param2);
++        fragment.setArguments(args);
++        return fragment;
++    }
++
++    @Override
++    public void onCreate(Bundle savedInstanceState) {
++        super.onCreate(savedInstanceState);
++        if (getArguments() != null) {
++            mParam1 = getArguments().getString(ARG_PARAM1);
++            mParam2 = getArguments().getString(ARG_PARAM2);
++        }
++    }
++
++    @Override
++    public View onCreateView(LayoutInflater inflater, ViewGroup container,
++                             Bundle savedInstanceState) {
++        // Inflate the layout for this fragment
++        return inflater.inflate(R.layout.fragment_onion, container, false);
++    }
++}
+\ No newline at end of file
+Index: app/build.gradle
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>plugins {\r\n    id 'com.android.application'\r\n    id 'com.google.gms.google-services'\r\n    id 'com.google.firebase.crashlytics'\r\n}\r\n\r\nandroid {\r\n    compileSdk 31\r\n\r\n    defaultConfig {\r\n        applicationId \"com.ynot.farmhelp\"\r\n        minSdk 21\r\n        targetSdk 31\r\n        versionCode 1\r\n        versionName \"1.0\"\r\n\r\n        testInstrumentationRunner \"androidx.test.runner.AndroidJUnitRunner\"\r\n    }\r\n\r\n    buildTypes {\r\n        release {\r\n            minifyEnabled false\r\n            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'\r\n        }\r\n    }\r\n    compileOptions {\r\n        sourceCompatibility JavaVersion.VERSION_1_8\r\n        targetCompatibility JavaVersion.VERSION_1_8\r\n    }\r\n\r\n    aaptOptions\r\n            {\r\n                cruncherEnabled = false\r\n            }\r\n}\r\n\r\ndependencies {\r\n\r\n    implementation 'androidx.appcompat:appcompat:1.3.1'\r\n    implementation 'com.google.android.material:material:1.4.0'\r\n    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'\r\n    implementation 'androidx.cardview:cardview:1.0.0'\r\n    implementation 'com.google.firebase:firebase-analytics:20.1.2'\r\n    implementation 'com.google.firebase:firebase-auth:21.0.3'\r\n    implementation 'com.google.firebase:firebase-firestore:24.1.1'\r\n    implementation 'com.google.firebase:firebase-database:20.0.4'\r\n    implementation 'com.google.firebase:firebase-storage:20.0.1'\r\n    implementation 'com.google.firebase:firebase-crashlytics:18.2.9'\r\n    implementation 'com.google.firebase:firebase-messaging:23.0.4'\r\n    testImplementation 'junit:junit:4.+'\r\n    androidTestImplementation 'androidx.test.ext:junit:1.1.3'\r\n    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'\r\n    implementation \"androidx.recyclerview:recyclerview:1.2.1\"\r\n    // For control over item selection of both touch and mouse driven selection\r\n    implementation \"androidx.recyclerview:recyclerview-selection:1.1.0\"\r\n    implementation \"androidx.cardview:cardview:1.0.0\"\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/build.gradle b/app/build.gradle
+--- a/app/build.gradle	(revision 108cffe36df610e383f3b58247fe649a4b1981e6)
++++ b/app/build.gradle	(date 1653659666994)
+@@ -47,6 +47,7 @@
+     implementation 'com.google.firebase:firebase-storage:20.0.1'
+     implementation 'com.google.firebase:firebase-crashlytics:18.2.9'
+     implementation 'com.google.firebase:firebase-messaging:23.0.4'
++    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+     testImplementation 'junit:junit:4.+'
+     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
