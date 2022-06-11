@@ -36,9 +36,8 @@
                 android:layout_marginTop="8dp"
                 android:text="Farmer Details"
                 android:textStyle="bold"
-
-
-                android:textSize="15sp"
+                android:layout_marginLeft="25dp"
+                android:textSize="20sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView" />
@@ -95,16 +94,27 @@
 
 
             <androidx.appcompat.widget.AppCompatSpinner
-                android:id="@+id/select_crop"
+                android:id="@+id/select_city"
                 android:layout_width="match_parent"
                 android:layout_height="55dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginRight="20dp"
                 android:background="@drawable/background_border" />
-
+            <TextView
+                android:id="@+id/farm_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Farm Details"
+                android:textStyle="bold"
+                android:layout_marginLeft="25dp"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView" />
             <androidx.appcompat.widget.AppCompatSpinner
-                android:id="@+id/select_city"
+                android:id="@+id/select_crop"
                 android:layout_width="match_parent"
                 android:layout_height="55dp"
                 android:layout_marginLeft="20dp"
@@ -130,21 +140,8 @@
                 android:layout_marginTop="5dp"
                 android:background="@drawable/background_border"/>
 
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:layout_marginTop="5dp"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/area"
-                    android:layout_width="match_parent"
-                    android:layout_height="48dp"
-                    android:hint="Enter Farm Area in Acer"
-                    android:inputType="phone" />
-            </com.google.android.material.textfield.TextInputLayout>
+
 
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
@@ -168,14 +165,8 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
                 android:layout_marginTop="5dp"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"/>
 
-                <com.google.android.material.textfield.TextInputEditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="Enter Password"
-                    android:id="@+id/password"/>
-            </com.google.android.material.textfield.TextInputLayout>
 
 
             <androidx.appcompat.widget.AppCompatButton
