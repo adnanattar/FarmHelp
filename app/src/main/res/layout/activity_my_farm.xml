@@ -130,6 +130,14 @@
                 android:layout_marginRight="20dp"
                 android:layout_marginTop="5dp"
                 android:background="@drawable/background_border"/>
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/select_area"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/background_border"/>
 
             <androidx.appcompat.widget.AppCompatSpinner
                 android:id="@+id/select_soil"
@@ -159,13 +167,7 @@
                     android:id="@+id/farm_location"/>
             </com.google.android.material.textfield.TextInputLayout>
 
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:layout_marginTop="5dp"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"/>
+
 
 
 
