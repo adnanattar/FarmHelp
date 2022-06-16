@@ -26,7 +26,7 @@
         <ImageView
             android:layout_width="428dp"
             android:layout_height="300dp"
-            android:src="@drawable/market"></ImageView>
+            android:src="@drawable/city4"></ImageView>
 
     </LinearLayout>
     <LinearLayout
@@ -42,7 +42,7 @@
             android:gravity="center"
             android:text="Kolhapur District"
             android:textSize="20dp"
-            android:textStyle="bold" />
+            android:textStyle="bold"></TextView>
 
         <TextView
             android:layout_width="match_parent"
@@ -50,7 +50,7 @@
             android:layout_marginTop="10dp"
             android:gravity="center"
             android:text="Today's Market Rate"
-            android:textSize="15dp" />
+            android:textSize="15dp"></TextView>
 
 
     </LinearLayout>
