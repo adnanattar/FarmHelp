@@ -230,21 +230,23 @@
         android:orientation="vertical"
         android:layout_marginTop="20dp">
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/select_crop"
             android:layout_width="match_parent"
             android:layout_height="30dp"
             android:text="Select Crop"
             android:gravity="center"
             android:background="@drawable/stock_border"
-            android:textStyle="bold"></TextView>
-        <TextView
+            android:textStyle="bold" />
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/updated_data"
             android:layout_width="match_parent"
             android:layout_height="30dp"
             android:text="Enter The Updated Data"
             android:layout_marginTop="10dp"
             android:gravity="center"
             android:background="@drawable/stock_border"
-            android:textStyle="bold"></TextView>
+            android:textStyle="bold"/>
 
 
     </LinearLayout>
